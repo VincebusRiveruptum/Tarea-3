@@ -1,0 +1,66 @@
+<div class="contenedor">
+    <div>
+        <form [formGroup]="formulario" (ngSubmit)="ValidarDatos()" novalidate>
+            <h1>Formulario de Contacto</h1>
+                <div id="info">
+                    <li>
+                        <label>Nombre Completo: </label>
+                        <input id="nombrecompleto" formControlName="nombrecompleto" type="name">
+                        <div *ngIf="formulario.controls['nombrecompleto'].invalid && (formulario.controls['nombrecompleto'].dirty || formulario.controls['nombrecompleto'].touched)" class="alert alert-danger">
+                            <div *ngIf="formulario.controls['nombrecompleto'].hasError('required')">
+                              * Nombre obligatorio!
+                            </div> 
+                        </div>
+                    </li>
+                    <li>
+                        <label>Teléfono: </label>
+                        <input id="telefono" formControlName="telefono" type="tel">
+                        <div *ngIf="formulario.controls['telefono'].invalid && (formulario.controls['telefono'].dirty || formulario.controls['telefono'].touched)" class="alert alert-danger">
+                            <div *ngIf="formulario.controls['telefono'].hasError('required')">
+                              * Telefono obligatorio!
+                            </div> 
+                        </div>
+                    </li>
+                    <li>
+                        <label>Correo: </label>
+                        <input id="email" formControlName="email" type="email">
+                        <div *ngIf="formulario.controls['email'].invalid && (formulario.controls['email'].dirty || formulario.controls['email'].touched)" class="alert alert-danger">
+                            <div *ngIf="formulario.controls['email'].hasError('required')">
+                              * E-mail obligatorio!
+                            </div> 
+                        </div>
+                    </li>
+                    
+                </div>
+                <hr>
+                <div id="opciones">
+                    <p>Destino: </p>
+                    <input id="rpublicidad" name="rpublicidad" type="radio" value="Publicidad" checked >
+                    <label for="rpublicidad">Publicidad</label>
+                    <input id="rsugerencias" name="rpublicidad" type="radio" value="Sugerencias"  >
+                    <label for="rsugerencias">Sugerencias</label>
+                    <input id="rsubscripciones" name="rpublicidad" type="radio" value="Subscripciones"  >
+                    <label for="rsubscripciones">Subscripciones</label>
+                    
+                </div>
+                <hr>
+                <div id="texto">
+                    <label>Mensaje: </label>
+                    <textarea id="mensaje" formControlName="mensaje" type="text" rows="10"></textarea>
+                    <div *ngIf="formulario.controls['mensaje'].invalid && (formulario.controls['mensaje'].dirty || formulario.controls['mensaje'].touched)" class="alert alert-danger">
+                        <div *ngIf="formulario.controls['mensaje'].hasError('required')">
+                          El mensaje es obligatorio!
+                        </div> 
+                    </div>
+                </div>
+                <hr>
+                <div id="boton">
+                    <button type="submit" [disabled]="formulario.invalid">Enviar</button>
+                    <div *ngIf="estado">
+                        Mensaje enviado
+                   </div>
+                </div>             
+  
+        </form> 
+    </div>     
+</div>

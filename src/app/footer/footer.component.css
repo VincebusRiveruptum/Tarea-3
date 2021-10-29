@@ -1,0 +1,23 @@
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  background-color: black;
+  color: white;
+  bottom: 0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-bottom: 10%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.footer h1 {
+  text-align: center;
+  font-size: small;
+}
+/*# sourceMappingURL=footer.component.css.map */

@@ -1,0 +1,19 @@
+.DetallesNoticia {
+  padding-bottom: 10%;
+}
+
+.DetallesNoticia #noticia {
+  padding: 1%;
+}
+
+.DetallesNoticia #mfoto {
+  text-align: center;
+}
+
+.DetallesNoticia #mfoto img {
+  margin: auto;
+  max-width: 50%;
+  height: auto;
+  padding: 1%;
+}
+/*# sourceMappingURL=detalle-noticia.component.css.map */

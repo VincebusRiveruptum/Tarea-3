@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,gBAAgB,CAAA;EACZ,cAAc,EAAC,GAAG;CAerB;;AAhBD,AAEI,gBAFY,CAEZ,QAAQ,CAAA;EACJ,OAAO,EAAC,EAAE;CACb;;AAJL,AAKI,gBALY,CAKZ,MAAM,CAAA;EACN,UAAU,EAAE,MAAM;CAQjB;;AAdL,AAOQ,gBAPQ,CAKZ,MAAM,CAEF,GAAG,CAAA;EAEC,MAAM,EAAC,IAAI;EACX,SAAS,EAAE,GAAG;EACd,MAAM,EAAE,IAAI;EACZ,OAAO,EAAC,EACZ;CAAC",
+    "sources": [
+        "detalle-noticia.component.scss"
+    ],
+    "names": [],
+    "file": "detalle-noticia.component.css"
+}

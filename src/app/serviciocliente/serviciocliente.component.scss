@@ -1,0 +1,47 @@
+.contenedor{
+ 
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin:auto;
+    max-width: 60%;
+    min-width: 40%;
+
+    div{
+        #info{
+            text-align:right;
+            list-style-type: none;
+            li{
+                padding-bottom:1%;
+            }
+        }
+    
+    
+        #opciones{            
+            text-align: left;
+            
+            li{
+                padding-bottom:1%;
+            }
+        }  
+
+        #texto{
+            display:flex;
+            flex-direction: column;
+            textarea{
+                min-width: 400px;
+                min-height: 50px;
+            }
+        }
+        #boton{
+            text-align: center;
+            padding:5%;
+            li{
+                padding-bottom:1%;
+            }
+        }
+    }
+  
+}
+
